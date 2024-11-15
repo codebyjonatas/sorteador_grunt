@@ -1,0 +1,78 @@
+@fontPrincipal: Roboto, sans-serif;
+@fontSecundaria: Lobster, cursive;
+@corDoTexto: #fff;
+@corDeFundo: #eb3b5a;
+@corFundoBtn: #f7b731;
+@corTextoBtn: #000;
+
+body {
+  background-color: @corDeFundo;
+  font-family: @fontPrincipal;
+  color: @corDoTexto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h1 {
+    font-family: @fontSecundaria;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      text-align: center;
+      display: block;
+    }
+
+    input {
+      display: block;
+      margin: 16px auto 0;
+      font-size: 2em;
+      max-width: 120px;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      border-bottom: 6px solid @corDoTexto;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: bold;
+      font-family: @fontPrincipal;
+      padding: 16px;
+      font-size: 1.3em;
+      margin-top: 16px;
+      border-radius: 8px;
+      color: @corTextoBtn;
+      background-color: @corFundoBtn;
+      border-top: none;
+      border-left: none;
+      border-color: #d39000;
+    }
+
+    .result {
+      max-width: 50%;
+      font-size: 42px;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bolder;
+      width: 100%;
+      border: 3px dotted @corFundoBtn;
+      color: @corFundoBtn;
+    }
+  }
+}
